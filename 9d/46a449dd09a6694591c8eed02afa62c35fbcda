@@ -1,0 +1,23 @@
+.npmrc
+  s_13716765872fb5::t_dfd7cdc2cbc300 1-2
+apps/test/package.json
+  s_13716765872fb5::t_400d9715f34f65 23-24
+pnpm-workspace.yaml
+  s_13716765872fb5::t_5b0e34228c0fc4 17-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "9d46a449dd09a6694591c8eed02afa62c35fbcda",
+  "prompts": {},
+  "sessions": {
+    "s_13716765872fb5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf5daa-589a-4832-b514-26a745d7001c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "MK <fengmk2@gmail.com>"
+    }
+  }
+}
