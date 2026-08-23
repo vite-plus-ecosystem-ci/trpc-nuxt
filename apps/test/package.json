@@ -22,6 +22,8 @@
   "devDependencies": {
     "@nuxt/test-utils": "^4.0.3",
     "@playwright/test": "1.60.0",
-    "vite-plus": "catalog:"
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
   }
 }
