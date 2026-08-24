@@ -35,6 +35,9 @@ jobs:
       - name: Build library
         run: vp run build:lib
 
+      # Ecosystem-ci smoke test: publishing a preview package needs a GitHub App or
+      # token the fork does not have, and it does not exercise the pinned Vite+.
       - name: Publish snapshot package
+        if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
         id: snapshot
         run: vp dlx pkg-pr-new publish
