@@ -1,0 +1,19 @@
+.github/workflows/snapshot.yml
+  s_71a3b49c0bdf46::t_72266d1ecfc7ad 38-39,41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1398cbc5b16a25307c44a6926879f104bbeacec6",
+  "prompts": {},
+  "sessions": {
+    "s_71a3b49c0bdf46": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d1129124-4b50-493c-a6b0-9bd30f8b1e4d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "MK <fengmk2@gmail.com>"
+    }
+  }
+}
