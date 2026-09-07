@@ -38,3 +38,5 @@ jobs:
       - name: Publish snapshot package
         id: snapshot
         run: vp dlx pkg-pr-new publish
+        # Ecosystem smoke test: publishing needs credentials unavailable on the fork.
+        if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
