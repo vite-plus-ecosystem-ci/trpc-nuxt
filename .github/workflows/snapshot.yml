@@ -35,6 +35,7 @@ jobs:
       - name: Build library
         run: vp run build:lib
 
-      - name: Publish snapshot package
+      - if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
+        name: Publish snapshot package
         id: snapshot
         run: vp dlx pkg-pr-new publish
