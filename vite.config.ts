@@ -1,6 +1,12 @@
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+  test: {
+    // Vitest v4 compatibility: preserve mock call history.
+    // Remove after tests no longer rely on calls from setup or earlier tests.
+    // https://vitest.dev/guide/migration/#clearmocks-is-enabled-by-default
+    clearMocks: false,
+  },
   staged: {
     '*': 'vp check --fix',
   },
@@ -38,6 +44,7 @@ export default defineConfig({
     entry: ['./src/client/index.ts', './src/server/index.ts'],
     clean: true,
     deps: {
+      resolveDepSubpath: true,
       neverBundle: ['#imports', 'nuxt/app', 'vue', 'h3', /@trpc\/client/, /@trpc\/server/],
     },
     dts: true,
