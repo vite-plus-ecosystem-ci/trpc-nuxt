@@ -14,12 +14,16 @@ onlyBuiltDependencies:
   - esbuild
   - sharp
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@0.2.9
-  vite-plus: 0.2.9
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.7cb75b46f7a73413ee0803eaac3f6a6b6763f158
+  vite-plus: 0.0.0-commit.7cb75b46f7a73413ee0803eaac3f6a6b6763f158
+  vitest: 5.0.3
 overrides:
-  vite: 'catalog:'
+  vite@*: 'catalog:'
+  vitest@*: 'catalog:'
 peerDependencyRules:
   allowAny:
     - vite
+    - vitest
   allowedVersions:
     vite: '*'
+    vitest: '*'
