@@ -21,7 +21,7 @@ permissions:
 jobs:
   e2e:
     name: Library and E2E
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Ecosystem-ci smoke test: Playwright has no Chromium build for Ubuntu 26 (ubuntu-latest)
 
     steps:
       - name: Checkout
